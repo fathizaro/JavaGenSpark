@@ -2,7 +2,8 @@ import java.util.*;
 
 public class Project2GenSpark {
     public static void main(String[]args){
-        Scanner arg=new Scanner(System.in);
+      try{
+          Scanner arg=new Scanner(System.in);
         System.out.println("Hello! What is your name?");
         String name=arg.nextLine();
 
@@ -41,6 +42,11 @@ public class Project2GenSpark {
 
             }
             System.out.println("Good job, "+name+"! You guessed my number in 3 guesses!");
+        }catch(Exception e){
+                        System.out.println("Caught Exception: Number Format Exception");
+
+        }
+          
 
 
         }
